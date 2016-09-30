@@ -6,7 +6,7 @@ class DmozSpider(scrapy.Spider):
     name = "dmoz"
     # allowed_domains = ["itjuzi.com"]
 
-    start_urls = ["http://itjuzi.com/company/{}".format(n) for n in range(1700, 1800)] #get the range of company
+    start_urls = ["http://itjuzi.com/company/{}".format(n) for n in range(1000, 2000)] #get the range of company
 
     def parse(self, response):          #get informations about itjuzi
         item = DmozItem()
