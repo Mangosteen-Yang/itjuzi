@@ -14,7 +14,7 @@ class DmozSpider(scrapy.Spider):
         item['product'] = response.css('ul.bread').xpath('./li/a/text()')[2].extract()
         item['company'] = response.css(".des-more>div>span:nth-child(1)")[0].xpath('./text()').extract()
         item['location'] = response.css('.fa-map-marker')[0].xpath('../span/text()').extract()
-        # item['website'] = website
+        item['website'] = website       #save website because some hire url may not conatin base url
 
         yield scrapy.Request(website, meta={'item': item}, callback=self.parse_item)
     def parse_item(self, response):                             #get informations about hire url

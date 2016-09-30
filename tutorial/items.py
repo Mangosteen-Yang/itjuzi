@@ -12,5 +12,5 @@ class DmozItem(scrapy.Item):
     product = scrapy.Field()
     company = scrapy.Field()
     location = scrapy.Field()
-    # website = scrapy.Field()
+    website = scrapy.Field()
     hire_urls = scrapy.Field()
