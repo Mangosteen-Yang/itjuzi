@@ -23,3 +23,9 @@
 7. 对于有些hire url不含base url的分别取到,尚未组合
 8. 生成json中的中文为Unicode,未解码
 9. 未对抓取失败的站点建立log
+
+
+##使用:
+
+`scrapy crawl dmoz -o itjuzi.json`
+结果存在`itjuzi.json`
