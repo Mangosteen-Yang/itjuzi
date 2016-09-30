@@ -31,12 +31,8 @@
 `scrapy crawl dmoz -o itjuzi.json`
 结果存在`itjuzi.json`
 
-product为产品
-
-company为公司
-
-location为地址
-
-website为网站
-
-hire_urls为招聘地址
+`product`为产品
+`company`为公司
+`location`为地址
+`website`为网站
+`hire_urls`为招聘地址
